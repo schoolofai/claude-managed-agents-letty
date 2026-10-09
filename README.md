@@ -1,8 +1,8 @@
 # Claude Managed Agents: Letty, a scheduled agent built from scratch
 
-[![Watch the video](docs/thumbnail.png)](https://youtu.be/VIDEO_ID)
+[![Watch the video](docs/thumbnail.png)](https://youtu.be/iereLgBDhAg)
 
-**Video:** https://youtu.be/VIDEO_ID
+**Video:** https://youtu.be/iereLgBDhAg
 
 Every file from the video. Letty is a morning agent for **Harbour Lettings, a fictional letting agency**. All people, addresses and postcodes are invented, and ZZ postcodes do not exist. Each weekday at 07:32 London time, a Claude Managed Agents deployment would start a fresh session. Letty reads the agency's files and writes a short handover, a handoff for each colleague with something to do, and a rent reminder draft for review. She has no mailbox, no Slack token and no outbound network. Nothing leaves the building.
 
@@ -35,7 +35,7 @@ examples/first-run/                  everything Letty wrote on the run filmed in
 
 Every output below is from the run in the video. Your IDs will differ, and the model's wording can vary from run to run.
 
-### 1. Install the ant CLI ([video 6:20](https://youtu.be/VIDEO_ID?t=380))
+### 1. Install the ant CLI ([video 6:20](https://youtu.be/iereLgBDhAg?t=380))
 
 What it does: installs Anthropic's official command-line tool. On macOS use `brew install anthropics/tap/ant`. On Linux:
 
@@ -56,7 +56,7 @@ ant version 1.39.1
 
 Then log in with `ant auth login`, or export `ANTHROPIC_API_KEY` in your shell. Never commit a key.
 
-### 2. Clone the repo ([video 6:20](https://youtu.be/VIDEO_ID?t=380))
+### 2. Clone the repo ([video 6:20](https://youtu.be/iereLgBDhAg?t=380))
 
 What it does: gets the files. Nothing exists on your account yet.
 
@@ -86,7 +86,7 @@ Expected output:
 
 (plus `LICENSE`, `README.md` and `.gitignore`)
 
-### 3. Preview the plan ([video 6:31](https://youtu.be/VIDEO_ID?t=391))
+### 3. Preview the plan ([video 6:31](https://youtu.be/iereLgBDhAg?t=391))
 
 What it does: `ant apply` without `--yes` shows what it would create, then asks. Press `d` for details, then `n`. Nothing is created. The plan also prints the organization and workspace it will use.
 
@@ -111,7 +111,7 @@ Apply these changes? (y)es / (n)o / (d)etails n
 Aborted.
 ```
 
-### 4. Apply, then pause straight away ([video 6:47](https://youtu.be/VIDEO_ID?t=407))
+### 4. Apply, then pause straight away ([video 6:47](https://youtu.be/iereLgBDhAg?t=407))
 
 What it does: creates the 7 resources in dependency order (skills first, because the agent needs their IDs) and writes their IDs to `claude-lock.json`. The new deployment starts active, so the next two commands pause it.
 
@@ -147,7 +147,7 @@ State written to ./claude-lock.json
 
 `claude-lock.json` is in `.gitignore`. It holds your resource IDs, not secrets, but it belongs to your account.
 
-### 5. Seed the rules store ([video 7:14](https://youtu.be/VIDEO_ID?t=434))
+### 5. Seed the rules store ([video 7:14](https://youtu.be/iereLgBDhAg?t=434))
 
 What it does: `ant apply` creates the stores, not the files in them. This writes `rules.md`, `agency.json` and one inbox note into the read-only rules store.
 
@@ -164,7 +164,7 @@ Expected output:
 seeded the rules store: 3 files
 ```
 
-### 6. Start one run by hand and watch it ([video 8:09](https://youtu.be/VIDEO_ID?t=489))
+### 6. Start one run by hand and watch it ([video 8:09](https://youtu.be/iereLgBDhAg?t=489))
 
 What it does: starts one session now, even though the deployment is paused, and follows it live. The first message is the deployment file's body. Press Ctrl-C to detach when Letty goes idle. The run in the video took about half a minute of active work.
 
@@ -186,7 +186,7 @@ I left three things out of the handover:
 - Lantern EICR: it expires in April 2027, outside the 60-day window.
 ```
 
-### 7. Read what she wrote ([video 8:47](https://youtu.be/VIDEO_ID?t=527))
+### 7. Read what she wrote ([video 8:47](https://youtu.be/iereLgBDhAg?t=527))
 
 What it does: lists the records store, then prints the handover, Priya's handoff and Alex's draft. Use `--format jsonl` so `ant` prints lines instead of opening its interactive table.
 
@@ -227,7 +227,7 @@ The draft for Alex starts `DRAFT FOR REVIEW. Do not send.` ([full file](examples
 
 The seed data is dated for 9 October 2026 (the leak note is from 8 October, the EPC expires 21 October). On a later date Letty works out "today" for herself, so her handover will differ. Edit `seed/` to move the dates.
 
-### 8. Leave it paused, or clean up ([video 11:10](https://youtu.be/VIDEO_ID?t=670))
+### 8. Leave it paused, or clean up ([video 11:10](https://youtu.be/iereLgBDhAg?t=670))
 
 What it does: keeps the schedule from ever firing, or removes what you created. Check that the deployment is still paused:
 
