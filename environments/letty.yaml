@@ -1,0 +1,14 @@
+# Cloud sandbox. No outbound host is required for the recorded build:
+# Letty reads and writes memory stores only. web_search and web_fetch are
+# disabled on the agent, because those tools are not bound by this list
+# in the daily-brief comments.
+# The daily-brief sample lists slack.com. An empty allowed_hosts list is
+# accepted by the API (checked with ant 1.39.1 on 9 Oct 2026), so this
+# sandbox has no outbound host at all.
+name: letty
+config:
+  type: cloud
+  networking:
+    type: limited
+    allow_mcp_servers: false
+    allowed_hosts: []

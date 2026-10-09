@@ -1,0 +1,12 @@
+record_type,id,property,detail,owner,date
+property,paperboat,"12 Paperboat Lane, Fablehaven, ZZ1 1AA",tenant Casey Quinn; September rent 14 days late,,
+property,lantern,"4 Lantern Mews, Fablehaven, ZZ1 2BB",tenant Rowan Ellis; rent paid,,
+property,gull,"8 Gull Cottage, Fablehaven, ZZ1 3CC",empty; viewing booked,sam,2026-10-11T11:00:00+01:00
+certificate,paperboat-gas,"12 Paperboat Lane, Fablehaven, ZZ1 1AA",gas safety,priya,2026-11-18
+certificate,lantern-eicr,"4 Lantern Mews, Fablehaven, ZZ1 2BB",EICR,priya,2027-04-02
+certificate,gull-epc,"8 Gull Cottage, Fablehaven, ZZ1 3CC",EPC,priya,2026-10-21
+job,job-104,"4 Lantern Mews, Fablehaven, ZZ1 2BB",boiler knocking; contractor Pebble Heating; open since 2026-10-06,priya,2026-10-06
+inbox,2026-10-08-leak,"12 Paperboat Lane, Fablehaven, ZZ1 1AA",Casey Quinn reports a drip under the kitchen sink,priya,2026-10-08T21:40:00+01:00
+colleague,priya,,Priya Shah property manager,,
+colleague,sam,,Sam Okonkwo lettings negotiator,,
+colleague,alex,,Alex Reid accounts,,

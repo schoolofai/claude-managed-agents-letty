@@ -1,0 +1,54 @@
+{
+  "agency": "Harbour Lettings",
+  "note": "Entirely fictional. Addresses and people are made up.",
+  "colleagues": [
+    {"id": "priya", "name": "Priya Shah", "role": "property manager"},
+    {"id": "sam", "name": "Sam Okonkwo", "role": "lettings negotiator"},
+    {"id": "alex", "name": "Alex Reid", "role": "accounts"}
+  ],
+  "properties": [
+    {
+      "id": "paperboat",
+      "address": "12 Paperboat Lane, Fablehaven, ZZ1 1AA",
+      "tenant": {"id": "casey", "name": "Casey Quinn"},
+      "rent": {"status": "late", "days_late": 14, "period": "September 2026"}
+    },
+    {
+      "id": "lantern",
+      "address": "4 Lantern Mews, Fablehaven, ZZ1 2BB",
+      "tenant": {"id": "rowan", "name": "Rowan Ellis"},
+      "rent": {"status": "paid", "days_late": 0, "period": "October 2026"}
+    },
+    {
+      "id": "gull",
+      "address": "8 Gull Cottage, Fablehaven, ZZ1 3CC",
+      "tenant": null,
+      "rent": null
+    }
+  ],
+  "certificates": [
+    {"property_id": "paperboat", "kind": "gas_safety", "expires": "2026-11-18"},
+    {"property_id": "lantern", "kind": "eicr", "expires": "2027-04-02"},
+    {"property_id": "gull", "kind": "epc", "expires": "2026-10-21"}
+  ],
+  "jobs": [
+    {
+      "id": "job-104",
+      "property_id": "lantern",
+      "opened": "2026-10-06",
+      "summary": "Boiler makes a knocking sound in the morning. Heating still works.",
+      "status": "open",
+      "contractor": "Pebble Heating",
+      "owner": "priya"
+    }
+  ],
+  "viewings": [
+    {
+      "id": "view-18",
+      "property_id": "gull",
+      "when": "2026-10-11T11:00:00+01:00",
+      "owner": "sam",
+      "note": "Applicant is a fictional name on the negotiator's list: Nia Brooks."
+    }
+  ]
+}
